@@ -5,23 +5,52 @@
         </div>
         <div id=" " class="mt-3 py-4 categoryBo flex ">
             <p class="ml-3">List of CorporatePay Payment Categories</p>
-            <div id="containBox" class=" flex ml-auto lastLine   mr-3">
+            <div id="containBox" class=" flex ml-auto lastLine mr-3">
                 <button id="view" class="btn btn-outline-dark mr-2">View</button>
                 <button id="sortBy" class="btn btn-outline-dark mr-2">Sort by</button>
-                <button id="createPayment" class="btn btn-info hover:bg-indigo-dark focus:outline-none" data-toggle="modal" data-target="#paymentModal">Create Payment Category</button> 
+                <button id="createPayment" class="btn btn-info hover:bg-indigo-dark focus:outline-none" @click="toggleModal = !toggleModal">Create Payment Category</button> 
             </div>
         </div>
-        <!-- <div class="fixed   inset-0 flex justify-center items-center z-10" v-if="toggleModal">
-            <div class="relative mx-auto w-auto max-w-2xl">
-                <div class="bg-danger w-full">
-                    <h1>Add Payment Category</h1>
+
+        <div id="modalShow" style="" class=" d-block mr-auto ml-auto inset-0 flex justify-center items-center " v-if="toggleModal">
+            <div  class=" mx-auto w-auto max-w-2xl p-4 bg-danger">
+                <div class=" w-full rounded shadow-2xl">
+                    <h5>Add Payment Category</h5>
+                    <p>Please fill in the following details below</p>
+
+                    <div class="d-block mr-auto ml-auto">
+                        <form>
+                            <div class="form group">
+                                <label class="mt-4">Category</label>
+                                <br>
+                                <select class="bg-transparent rounded w-50 border border-grey-success p-2 :focus:outline-none">
+                                    <option>
+                                        Lorem ipsium
+                                    </option>
+                                    <option>
+                                        Lorem ipsium
+                                    </option>
+                                    <option>
+                                        Lorem ipsium
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="mt-4">Description</label>
+                                <br>
+                                <textarea class="bg-transparent rounded border border-gray w-100" rows="10" col="2"></textarea>
+                            </div>
+                            <button class="btn btn-info w-full" data-dismiss="modal">Submit</button>
+                        </form>
+                    </div>
+
                 </div>
             </div>
         </div>
-        <div v-if="toggleModal" class="absolute inset-0 z-40 opacity-25 bg-black"></div>-->
+        <div v-if="toggleModal" class="absolute inset-0 z-40 opacity-25 bg-success"></div>
 
         <!--MODAL-->
-        <div class="modal" id="paymentModal">
+        <!-- <div class="modal" id="paymentModal">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">'
@@ -52,7 +81,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
        
 
@@ -179,7 +208,7 @@
                 <p>Previous</p>
             </div>
             <div class="flex-initial p-2">
-                <p>1</p>
+                <button class=":focus:border-danger">1</button>
             </div>
             <div class="flex-initial  p-2">
                 <p>2</p>
@@ -238,6 +267,12 @@ data(){
     height: 1px;
     width: 260px;
 }
+/* #modalShow{
+    position: absolute;
+    z-index:-4;
+    top:0;
+    left:0;
+} */
 @media(max-width:991px) {
     #view{
         width: 50px;
