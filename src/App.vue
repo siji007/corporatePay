@@ -15,22 +15,36 @@
         </ul>
       </div>
 
-      <section class="mr-5">
-        <div class="" style="">
-          <input id="textInput" type="text" class="w-50  rounded py-1 bg-grey border border-info">
+      <section class="pr-5">
+        <!-- <div class="" style="">
+          <input id="textInput" type="text" class="w-50 rounded py-1 bg-grey border border-info">
 
-          <div class="float-right  flex">
+          <div class="float-right  flex flex-initial flex-nowrap">
           <p class="mr-3" id="notification"><i  class="fas fa-bell-on "></i></p>
-          <!-- <img class="w-20 rounded-full" src="./img/woman2.jpg" alt=""> -->
+          
           <div class="bg-success mr-3" id="avatar">
 
           </div>
           <p id="adminText" class="float-right ">Admin</p>
           </div>
+        </div> -->
+        <div class="flex">
+          <input id="textInput" type="text" class="w-50  rounded py-1 bg-grey border border-info">
+          <div class=" ml-auto  flex flex-initial flex-nowrap">
+          <p class="mr-3" id="notification"><i  class="fas fa-bell-on "></i></p>
+          
+          <div class="bg-success mr-3" id="avatar">
+
+          </div>
+          <p id="adminText" class="float-right ">Admin</p>
+          </div>
+          
         </div>
+
         <div class="" id="showRoute">
           <router-view></router-view>
         </div>
+
       </section>
   </div>
 </template>

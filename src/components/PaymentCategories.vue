@@ -4,109 +4,215 @@
             <h1>Payment Categories</h1>
 
         </div>
-        <div id=" " class="mt-3 py-4 categoryBo flex justify-between">
+        <div id=" " class="mt-3 py-4 categoryBo flex ">
             <p class="ml-3">List of CorporatePay Payment Categories</p>
-            <div id="containBox" class=" flex  justify-around  mr-3">
-                <button class="btn btn-outline-dark mr-2">View</button>
-                <button class="btn btn-outline-dark mr-2">Sort by</button>
-                <button class="btn btn-info">Create Payment Category</button>
+            <div id="containBox" class=" flex ml-auto lastLine   mr-3">
+                <button id="view" class="btn btn-outline-dark mr-2">View</button>
+                <button id="sortBy" class="btn btn-outline-dark mr-2">Sort by</button>
+                <button id="createPayment" class="btn btn-info hover:bg-indigo-dark focus:outline-none" data-toggle="modal" data-target="#paymentModal">Create Payment Category</button> 
+            </div>
+        </div>
+        <!-- <div class="fixed   inset-0 flex justify-center items-center z-10" v-if="toggleModal">
+            <div class="relative mx-auto w-auto max-w-2xl">
+                <div class="bg-danger w-full">
+                    <h1>Add Payment Category</h1>
+                </div>
+            </div>
+        </div>
+        <div v-if="toggleModal" class="absolute inset-0 z-40 opacity-25 bg-black"></div>-->
+
+        <!--MODAL-->
+        <div class="modal" id="paymentModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">'
+                        <h5 class="modal-title" id="paymentModalLabel">Add Payment Category</h5>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form group">
+                                    <label>Category</label>
+                                    <select>
+                                        <option>
+                                            Lorem ipsium
+                                        </option>
+                                        <option>
+                                            Lorem ipsium
+                                        </option>
+                                        <option>
+                                            Lorem ipsium
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Description</label>
+                                    <textarea rows="20" col="12"></textarea>
+                                </div>
+                                <button class="btn btn-info" data-dismiss="modal">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <hr id="line">
+       
 
         <div class="row mt-4">
-                        
-            <div class="col-lg-3 col-sm-3">
-                <p class="">Category</p>
-                <div class="flex justify-start mt-10">
-                    <input class="mt-2  " type="checkbox"/><p class="ml-4">Salary</p>
-                </div>
-                <div class="flex justify-start mt-4">
-                    <input class="mt-2  " type="checkbox"/><p class="ml-4">Salary</p>
-                </div>
-                <div class="flex justify-start mt-4">
-                    <input class="mt-2  " type="checkbox"/><p class="ml-4">Salary</p>
-                </div>
-                <div class="flex justify-start mt-4">
-                    <input class="mt-2  " type="checkbox"/><p class="ml-4">Salary</p>
-                </div>
-                <div class="flex justify-start mt-4">
-                    <input class="mt-2  " type="checkbox"/><p class="ml-4">Salary</p>
-                </div>
-                <div class="flex justify-start mt-4">
-                    <input class="mt-2  " type="checkbox"/><p class="ml-4">Salary</p>
-                </div>
-                <div class="flex justify-start mt-4">
-                    <input class="mt-2  " type="checkbox"/><p class="ml-4">Salary</p>
-                </div>
-                <div class="flex justify-start mt-4">
-                    <input class="mt-2  " type="checkbox"/><p class="ml-4">Salary</p>
-                </div>
-                <div class="flex justify-start mt-4">
-                    <input class="mt-2  " type="checkbox"/><p class="ml-4">Salary</p>
-                </div>
-                <!-- <div class="flex">
-                    <input class="mt-4 ml-4 " type="checkbox"/><p class="mt-4">Pensions</p>
-                </div> -->
-                <!-- <div class="flex">
-                    <input class="mt-2 ml-4 " type="checkbox"/><p>Witholding Tax</p>
-                </div>
-                <div class="flex">
-                    <input class="mt-2 ml-4 " type="checkbox"/><p>salary</p>
-                </div> -->
+            <div class="col-lg-3 col-md-3 col-sm-3 ">
+                <p class="text-grey-dark">Category</p>
             </div>
-            <div class="col-lg-6 col-sm-6">
-                <p>Description</p>
-                <p class=" mt-10">A new salary given out to all staffs </p>
-                <p class="mt-4">A new salary given out to all staffs </p>
-                <p class="mt-4">A new salary given out to all staffs </p>
-                <p class="mt-4">A new salary given out to all staffs </p>
-                <p class="mt-4">A new salary given out to all staffs </p>
-                <p class="mt-4">A new salary given out to all staffs </p>
-                <p class="mt-4">A new salary given out to all staffs </p>
-                <p class="mt-4">A new salary given out to all staffs </p>
-                <p class="mt-4">A new salary given out to all staffs </p>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <p class="text-grey-dark">Description</p>
             </div>
-            <div class="col-lg-3 col-sm-3">
-                <p>Status</p>
-                <div class="flex justify-between  mt-10">
-                    <p>Active</p>
-                    <button class="btn btn-success">op</button>
-                </div>
-                <div id="statusGroup" class="flex justify-between mt-2">
-                    <p class="text-danger">Inactive</p>
-                    <button class="btn btn-success">op</button>
-                </div>
-                <div id="statusGroup" class="flex justify-between mt-4">
-                    <p>Active</p>
-                    <button class="btn btn-success">op</button>
-                </div>
-                <div id="statusGroup" class="flex justify-between ">
-                    <p class="text-danger">Inactive</p>
-                    <button class="btn btn-success">op</button>
-                </div>
-                <div id="statusGroup" class="flex justify-between mt-2">
-                    <p>Active</p>
-                    <button class="btn btn-success">op</button>
-                </div>
-                <div id="statusGroup" class="flex justify-between">
-                    <p class="text-danger">Inactive</p>
-                    <button class="btn btn-success">op</button>
-                </div>
-                <div id="statusGroup" class="flex justify-between ">
-                    <p>Active</p>
-                    <button class="btn btn-success">op</button>
-                </div>
-                <div id="statusGroup" class="flex justify-between ">
-                    <p class="text-danger">Inactive</p>
-                    <button class="btn btn-success">op</button>
-                </div>
-                
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <p class="text-grey-dark">Status</p>
             </div>
         </div>
+        <hr>
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="flex justify-start mt-4">
+                    <input class="mt-2" type="checkbox"/><p class="ml-4">Salary</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 mt-4 col-sm-6">
+                <p class="">A new salary given out to all staffs </p>
+            </div>
+            <div id="statusGroup" class="flex flex-nowrap mt-4 items-stretch">
+                <p class="text-danger">Inactive</p>
+                <button class="btn btn-success  ">op</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="flex justify-start mt-4">
+                    <input class="mt-2" type="checkbox"/><p class="ml-4">Salary</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 mt-4 col-sm-6">
+                <p class="">A new salary given out to all staffs </p>
+            </div>
+            <div id="statusGroup" class="flex flex-nowrap mt-4 items-stretch">
+                <p class="text-danger">Inactive</p>
+                <button class="btn btn-success  ">op</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="flex justify-start mt-4">
+                    <input class="mt-2  " type="checkbox"/><p class="ml-4">Salary</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 mt-4 col-sm-6">
+                <p class="">A new salary given out to all staffs </p>
+            </div>
+            <div id="statusGroup" class="flex justify-between mt-4">
+                <p class="text-danger">Inactive</p>
+                <button class="btn btn-success">op</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="flex justify-start mt-4">
+                    <input class="mt-2  " type="checkbox"/><p class="ml-4">Salary</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 mt-4 col-sm-6">
+                <p class="">A new salary given out to all staffs </p>
+            </div>
+            <div id="statusGroup" class="flex justify-between mt-4">
+                <p class="text-danger">Inactive</p>
+                <button class="btn btn-success">op</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="flex justify-start mt-4">
+                    <input class="mt-2  " type="checkbox"/><p class="ml-4">Salary</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 mt-4 col-sm-6">
+                <p class="">A new salary given out to all staffs </p>
+            </div>
+            <div id="statusGroup" class="flex justify-between mt-4">
+                <p class="text-danger">Inactive</p>
+                <button class="btn btn-success">op</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="flex justify-start mt-4">
+                    <input class="mt-2  " type="checkbox"/><p class="ml-4">Salary</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 mt-4 col-sm-6">
+                <p class="">A new salary given out to all staffs </p>
+            </div>
+            <div id="statusGroup" class="flex justify-between mt-4">
+                <p class="text-danger">Inactive</p>
+                <button class="btn btn-success">op</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="flex justify-start mt-4">
+                    <input class="mt-2  " type="checkbox"/><p class="ml-4">Salary</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 mt-4 col-sm-6">
+                <p class="">A new salary given out to all staffs </p>
+            </div>
+            <div id="statusGroup" class="flex justify-between mt-4">
+                <p class="text-danger">Inactive</p>
+                <button class="btn btn-success">op</button>
+            </div>
+        </div>
+
+        <hr>
+        <div class="flex justify-center mb-12">
+            <div class="flex-initial p-2">
+                <p>Previous</p>
+            </div>
+            <div class="flex-initial p-2">
+                <p>1</p>
+            </div>
+            <div class="flex-initial  p-2">
+                <p>2</p>
+            </div>
+            <div class="flex-initial  p-2">
+                <p>3</p>
+            </div>
+            <div class="flex-initial  p-2">
+                <p>4</p>
+            </div>
+            <div class="flex-initial  p-2">
+                <p>5</p>
+            </div>
+            <div class="flex-initial  p-2">
+                <p>Next</p>
+            </div>
+        </div>
+        <hr class="" id="lastLine">
+
+
+
     </div>
 </template>
+<script>
+export default {
+data(){
+    return{
+        toggleModal:false
+    };
+}
+}
+</script>
 <style scoped>
 #containBox{
     
@@ -117,11 +223,35 @@
 #statusGroup{
     /* margin-top:12px; */
 }
+#view{
+
+}
 #line{
     position: absolute; 
     top:270px;
     left:0px;
     color: red;
     z-index: 11;
+}
+#lastLine{
+    margin-top:-54px;
+    background-color: rgb(193, 183, 183);
+    height: 1px;
+    width: 260px;
+}
+@media(max-width:991px) {
+    #view{
+        width: 50px;
+        padding: 2px;
+    }
+    #sortBy{
+        width: 40px;
+        padding: 2px;
+    }
+    #createPayment{
+        width: 90px;
+        padding: 2px;
+    }
+  
 }
 </style>
