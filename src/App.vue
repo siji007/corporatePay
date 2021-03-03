@@ -59,7 +59,7 @@ li{
   position: fixed;
   left: -250px;
   width: 250px;
-  height: 100vh;
+  height: 100%;
   background-color: rgb(92, 13, 165);
   transition: all .5s ease;
 }

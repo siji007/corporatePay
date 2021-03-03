@@ -2,7 +2,6 @@
     <div id="app">
         <div>
             <h1>Payment Categories</h1>
-
         </div>
         <div id=" " class="mt-3 py-4 categoryBo flex ">
             <p class="ml-3">List of CorporatePay Payment Categories</p>
