@@ -18,7 +18,7 @@
                     <h5>Add Payment Category</h5>
                     <p>Please fill in the following details below</p>
 
-                    <div class="d-block mr-auto ml-auto">
+                    <div style="width:450px;" class="d-block mr-auto ml-auto w-full">
                         <form>
                             <div class="form group">
                                 <label class="mt-4">Category</label>
@@ -106,7 +106,7 @@
             <div class="col-lg-6 col-md-6 mt-4 col-sm-6">
                 <p class="">A new salary given out to all staffs </p>
             </div>
-            <div id="statusGroup" class="flex flex-nowrap mt-4 items-stretch">
+            <div id="statusGroup" class="flex flex-nowrap mt-4 ">
                 <p class="text-danger">Inactive</p>
                 <button class="btn btn-success  ">op</button>
             </div>
@@ -121,9 +121,9 @@
             <div class="col-lg-6 col-md-6 mt-4 col-sm-6">
                 <p class="">A new salary given out to all staffs </p>
             </div>
-            <div id="statusGroup" class="flex flex-nowrap mt-4 items-stretch">
+            <div id="statusGroup" class="flex flex-nowrap mt-4">
                 <p class="text-danger">Inactive</p>
-                <button class="btn btn-success  ">op</button>
+                <button class="btn btn-success">op</button>
             </div>
         </div>
 
@@ -136,10 +136,12 @@
             <div class="col-lg-6 col-md-6 mt-4 col-sm-6">
                 <p class="">A new salary given out to all staffs </p>
             </div>
-            <div id="statusGroup" class="flex justify-between mt-4">
+
+            <div id="statusGroup" class="flex justify-around mt-4">
                 <p class="text-danger">Inactive</p>
                 <button class="btn btn-success">op</button>
             </div>
+
         </div>
 
         <div class="row">
@@ -267,12 +269,15 @@ data(){
     height: 1px;
     width: 260px;
 }
-/* #modalShow{
+#modalShow{
     position: absolute;
-    z-index:-4;
-    top:0;
-    left:0;
-} */
+    z-index:1;
+    top:60%;
+    left:50%;
+    /* margin-left: auto;
+    margin-right: auto; */
+    transform: translate(-50%, -50%);
+}
 @media(max-width:991px) {
     #view{
         width: 50px;
