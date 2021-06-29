@@ -1,11 +1,13 @@
 <template>
   <div id="app">
+      
       <input type="checkbox" id="check">
       <label for="check">
         <i class="fas fa-bars" id="btn"></i>
         <i class="fas fa-times" id="cancel"></i>
       </label>
-      <div class="sidebar">
+
+      <div class="sidebar pr-3">
         <header class="mt-12 text-center font-bold">Cooperate Pay</header>
         <ul>
           <li class=""><a href="">Dashboard</a></li>

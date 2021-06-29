@@ -12,8 +12,8 @@
             </div>
         </div>
 
-        <div id="modalShow" style="" class=" d-block mr-auto ml-auto inset-0 flex justify-center items-center " v-if="toggleModal">
-            <div  class=" mx-auto w-auto max-w-2xl p-4 bg-danger">
+        <div id="modalShow" style="" class="d-block mr-auto ml-auto inset-0 flex justify-center items-center " v-if="toggleModal">
+            <div  class=" mx-auto w-auto max-w-2xl p-4 bg-grey-darker">
                 <div class=" w-full rounded shadow-2xl">
                     <h5>Add Payment Category</h5>
                     <p>Please fill in the following details below</p>
@@ -126,7 +126,7 @@
                 <button class="btn btn-success">op</button>
             </div>
         </div>
-
+ 
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-3">
                 <div class="flex justify-start mt-4">
